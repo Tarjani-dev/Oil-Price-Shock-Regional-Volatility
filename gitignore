@@ -1,0 +1,38 @@
+# ---- Data files (large / sensitive) ----
+data/raw/*.csv
+data/raw/*.zip
+data/processed/*.csv
+!data/raw/README.md
+!data/processed/.gitkeep
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ---- Jupyter ----
+.ipynb_checkpoints
+
+# ---- Power BI ----
+# Keep the .pbix file tracked, but ignore local cache/temp files Power BI generates
+*.pbix.bak
+~$*.pbix
+
+# ---- OS / editor clutter ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ---- Environment / secrets ----
+.env
+*.env
+kaggle.json
+
+# ---- Logs ----
+*.log
