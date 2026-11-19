@@ -1,8 +1,5 @@
 # Oil Price Shock and Regional Volatility: A 2012–2015 Analysis
 
-[![SQL](https://img.shields.io/badge/SQL-analysis-blue)](sql/)
-[![Power BI](https://img.shields.io/badge/Power%20BI-dashboard-yellow)](dashboard/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 **Did borrowers in oil-producing U.S. states default on loans at a different rate than borrowers elsewhere after the 2014 oil price decline — and if so, what might explain it?**
 
@@ -241,23 +238,9 @@ cd Oil-Price-Shock-Regional-Volatility
 - The grade-level swing pattern is not strictly linear (grade E breaks the trend; grade G excluded for sample size)
 - This is observational data rather than a controlled experiment, so other unmeasured factors could also be contributing
 
----
-
-## Next Steps
-
-- Check application type (Individual vs. Joint) as a potential additional filter or factor
-- Apply formal significance testing (e.g., confidence intervals) around the swing estimates
-- Investigate employment tenure further as a possible mechanism, ideally with tenure tracked across the loan's life rather than only at origination
-- Repeat the analysis with an alternate window cutoff (e.g., ending September 2015) as a robustness check
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
 ## Author
 
-**Tarjani Pagare (King)** — [GitHub](https://github.com/Tarjani-dev)
+**Tarjani Pagare** — [GitHub](https://github.com/Tarjani-dev)
