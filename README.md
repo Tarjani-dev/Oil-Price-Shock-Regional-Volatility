@@ -19,8 +19,6 @@ This project uses public Lending Club loan data to examine that question with a 
 8. [Tech Stack](#tech-stack)
 9. [How to Reproduce](#how-to-reproduce)
 10. [Limitations](#limitations)
-11. [Next Steps](#next-steps)
-12. [License](#license)
 
 ---
 
@@ -36,7 +34,6 @@ This project compares loan charge-off rates between oil-producing and other stat
 
 ## Repository Structure
 
-```text
 Oil-Price-Shock-Regional-Volatility/
 │
 ├── README.md
@@ -55,6 +52,9 @@ Oil-Price-Shock-Regional-Volatility/
 │   ├── 05_quarterly_trend.sql
 │   └── 06_explanatory_factors.sql
 │
+├── notebooks/
+│   └── statistical_validation.py
+│
 ├── reports/
 │   ├── Week_1_Report.docx
 │   ├── Week_2_Report.docx
@@ -65,8 +65,6 @@ Oil-Price-Shock-Regional-Volatility/
 │
 └── docs/
     └── data_dictionary.md
-```
-
 ---
 
 ## Dataset
