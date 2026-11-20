@@ -135,7 +135,7 @@ flowchart TD
 
 ## Key Findings
 
-### 1. Overall cohort result (Week 1)
+### 1. The shock period- 2014-15 cohort result 
 
 | Group | Loans | Charged off | Charge-off rate |
 |---|---|---|---|
