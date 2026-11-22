@@ -56,12 +56,9 @@ WHERE TRIM(term) = '36 months'
 GROUP BY 1, 2, 3
 ORDER BY 1, 2, 3;
 
--- Finding: the grade mix shifted in both groups from pre-shock to
--- shock-period -- A-grade share rose about 4-5 points and B-grade
--- share fell about 7 points, in both oil-producing and other
--- states. The shift between the two regions differs by at most
--- about half a point at every grade, meaning oil-producing states
--- did not originate meaningfully riskier-grade loans than the rest
--- of the country. This rules out a change in loan-grade mix as an
--- explanation for the regional charge-off gap -- the deterioration
--- happened within each grade, not from moving into riskier grades.
+-- Finding: the grade mix shifted in both groups from pre-shock to shock-period. 
+-- A-grade share rose about 4-5 points and B-grade share fell about 7 points, in both oil-producing and other states. 
+-- The shift between the two regions differs by at most about half a point at every grade, 
+-- meaning oil-producing states did not originate meaningfully riskier-grade loans than the rest
+-- of the country. This rules out a change in loan-grade mix as an explanation for the regional charge-off gap 
+-- the deterioration happened within each grade, not from moving into riskier grades.
