@@ -135,13 +135,13 @@ flowchart TD
 
 ## Key Findings
 
-### 1. The shock period- 2014-15 cohort result 
+### 1. Charge-off rates for loans issued in 2014-15
 
 | Group | Loans | Charged off | Charge-off rate |
 |---|---|---|---|
 | Oil-producing states | 50,972 | 7,581 | **14.87%** |
 | Other states | 394,624 | 56,866 | **14.41%** |
-| **All loans** | **445,596** | **64,447** | **14.46%** |
+| **Total (2014-15 cohort )** | **445,596** | **64,447** | **14.46%** |
 
 Gap: **+0.46 percentage points**. On its own, this gap is modest and does not establish whether it is tied to the oil shock or simply a pre-existing regional difference.
 
@@ -157,24 +157,33 @@ Both groups' rates rose over time, but oil-producing states rose faster (**+3.36
 
 ### 3. Pattern across credit grades
 
-| Grade | Swing in gap |
-|---|---|
-| A | +1.33% |
-| B | +1.53% |
-| C | +1.64% |
-| D | +3.56% |
-| E | +2.31% |
-| F | +4.55% |
+| Grade | Pre-shock gap | Shock-period gap | Swing |
+|---|-----------|-----------|---------------|
+| A | −0.63 pts | +0.69 pts | **+1.32 pts** |
+| B | −1.07 pts | +0.47 pts | **+1.54 pts** |
+| C | −1.26 pts | +0.38 pts | **+1.64 pts** |
+| D | −2.76 pts | +0.79 pts | **+3.55 pts** |
+| E | −1.43 pts | +0.87 pts | **+2.30 pts** |
+| F | −1.54 pts | +3.01 pts | **+4.55 pts** |
+| G | +13.89 pts | +9.04 pts | −4.85 pts (unreliable — see note) |
 
-The swing is generally larger for riskier grades, though **not strictly linear** — grade E is smaller than grade D, and grade G was excluded since its pre-shock oil-producing sample was only 3 loans, too small to draw a conclusion from.
+The swing is generally larger for riskier grades, though **not strictly linear** — grade E is smaller than grade D. Grade G's swing is shown for completeness but should not be read as a real finding: its pre-shock oil-producing sample was only 3 loans, far too small to draw any conclusion from.
 
-### 4. State-level detail (oil-producing states, shock period)
+### 4. State-level detail of oil-producing group during shock period
 
-- Highest observed rate: **OK (~17.9%)**
-- Lowest observed rate: **WY (~12%)**
-- Largest sample, moderate rate: **TX (~37,000 loans, ~14.3%)** — TX represents **72.4%** of all oil-producing loan volume, so the pooled oil-producing rate is heavily shaped by Texas
-- Smaller samples (**ND, WY, AK**) carry more uncertainty and are best read with caution
-- Excluding TX, the remaining six states show a **higher** combined rate (**16.34%**, 14,054 loans)
+The **14.87% oil-producing charge-off rate** reported above is a single blended average across all seven states — but it hides real variation underneath it. The seven states did not perform uniformly.
+
+- Rates varied meaningfully across the seven states:
+  
+- **Oklahoma (OK, 17.90%)** was the highest.
+- **Louisiana (LA, 16.68%)** and **New Mexico (NM, 15.75%)** also ran well above Texas, showing the group isn't uniform
+- **Wyoming (WY, 12.07%)** had the lowest point estimate, but its confidence interval overlaps with Texas's, so it should not be read as    a confirmed statistical difference
+- **Texas (TX, ~37,000 loans, 14.32%)** represents **72.4%** of all oil-producing loan volume, so the pooled oil-producing rate is          heavily shaped by Texas specifically
+- Excluding Texas, the remaining six states show a **higher** combined rate (**16.34%**, 14,054 loans)
+- The smallest samples (**North Dakota (ND): 311, Wyoming (WY): 978, Alaska (AK): 1,067**) carry the widest confidence intervals and        should not be read as reliable on their own
+
+- Texas accounts for 72.4% of the group's loan volume, so its outcome dominates the pooled rate — and Texas performed comparatively well    during the shock period.
+  Accordingly, the pooled rate was re-examined with Texas excluded as a sensitivity check. This yields a rate of 16.34% for the remaining   six states- a result that does not supersede the primary 14.87% finding.
 
 ---
 
@@ -206,6 +215,7 @@ The `/dashboard` folder contains the Power BI file; static exports live in `/rep
 |---|---|
 | **SQL** | Filtering, aggregation, cohort construction, difference-in-differences queries |
 | **Pandas** | Data cleaning and exploratory analysis |
+| **SciPy** | Statistical validation — two-proportion z-test and confidence interval on the headline gap |
 | **Power BI** | Dashboarding and visualization |
 | **Git / GitHub** | Version control and project hosting |
 
