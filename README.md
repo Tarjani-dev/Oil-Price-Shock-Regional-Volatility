@@ -24,7 +24,7 @@ This project uses public Lending Club loan data to examine that question with a 
 
 ## Overview
 
-Seven U.S. states have economies closely tied to oil and gas: Texas, North Dakota, Oklahoma, New Mexico, Louisiana, Wyoming, Alaska (**TX, ND, OK, NM, LA, WY, AK**). When oil prices fell sharply starting in mid-2014, it's reasonable to ask whether borrowers in these states became more likely to default on personal loans than borrowers elsewhere.
+Seven U.S. states have economies closely tied to oil and gas: **Texas, North Dakota, Oklahoma, New Mexico, Louisiana, Wyoming, Alaska** (**TX, ND, OK, NM, LA, WY, AK**). When oil prices fell sharply starting in mid-2014, it's reasonable to ask whether borrowers in these states became more likely to default on personal loans than borrowers elsewhere.
 
 This project compares loan charge-off rates between oil-producing and other states across two windows — **before** the price decline (2012–2013) and **during the decline** (2014–2015) — to see whether a measurable shift appears, and explores a few possible explanations for it.
 
