@@ -43,7 +43,7 @@ flowchart
 ---
 
 ## Repository Structure
-
+```
 Oil-Price-Shock-Regional-Volatility/
 │
 ├── README.md
@@ -75,6 +75,7 @@ Oil-Price-Shock-Regional-Volatility/
 │
 └── docs/
     └── data_dictionary.md
+```
 ---
 
 ## Dataset
