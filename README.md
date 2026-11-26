@@ -29,7 +29,7 @@ Seven U.S. states have economies closely tied to oil and gas: **Texas, North Dak
 This project compares loan charge-off rates between selected oil-producing and other states across two windows — **before** the price decline (2012–2013) and **during the decline** (2014–2015) — to see whether a measurable shift appears, and explores a few possible explanations for it.
 
 ```mermaid
-flowchart TD
+flowchart
     A["Raw data\n2,260,701 rows"] --> B["Issued 2014-15\n656,724 rows\n(-1,603,977: other years + 33 blanks)"]
     B --> C["36-month term only\n445,743 rows\n(-210,981: 60-month loans)"]
     C --> D["Terminal status only\n445,596 loans\n(-147: unresolved)"]
