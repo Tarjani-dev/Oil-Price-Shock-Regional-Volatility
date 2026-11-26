@@ -153,6 +153,17 @@ flowchart TD
 
 ## Key Findings
 
+```mermaid
+flowchart TD
+    A["Raw data\n2,260,701 rows"] --> B["Issued 2014-15\n656,724 rows\n(-1,603,977: other years + 33 blanks)"]
+    B --> C["36-month term only\n445,743 rows\n(-210,981: 60-month loans)"]
+    C --> D["Terminal status only\n445,596 loans\n(-147: unresolved)"]
+    D --> E["Oil-producing states\n50,972 loans - 14.87%"]
+    D --> F["Other states\n394,624 loans - 14.41%"]
+    E --> G["Gap: +0.46 pts\n(reversed from -1.34 pts pre-shock)"]
+    F --> G
+```
+
 ### 1. Charge-off rates for loans issued in 2014-15
 
 | Group | Loans | Charged off | Charge-off rate |
