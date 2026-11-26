@@ -123,16 +123,17 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    subgraph Pre["Pre-shock 2012-13"]
+    subgraph Pre["Pre-shock 2012-13 - charge-off rate"]
     P1["Oil-producing: 11.51%"]
     P2["Other states: 12.85%"]
     end
-    subgraph Shock["Shock period 2014-15"]
+    subgraph Shock["Shock period 2014-15 - charge-off rate"]
     S1["Oil-producing: 14.87%"]
     S2["Other states: 14.41%"]
     end
     Pre -->|Oil price decline| Shock
 ```
+Oil-producing states had a **lower** charge-off rate than other states before the shock (11.51% vs 12.85%), but a **higher** rate during the shock (14.87% vs 14.41%) — a reversal of +1.80 percentage points.
 
 ### Step 3 — Test possible explanations
 
@@ -153,17 +154,6 @@ flowchart TD
 
 ## Key Findings
 
-```mermaid
-flowchart TD
-    A["36-month term loans\nissued 2014-15\n445,743 rows"] --> B["Terminal status only\n445,596 loans\n(-147: unresolved)"]
-    B --> C["Oil-producing states\n50,972 loans - 14.87%"]
-    B --> D["Other states\n394,624 loans - 14.41%"]
-    C --> E["Gap: +0.46 pts\n(reversed from -1.34 pts pre-shock)"]
-    D --> E
-```
-
-This drops the raw-data and date-only steps, and folds "issued 2014-15" directly into the starting node alongside the term filter, since that's the first step you want shown.
-
 ### 1. Charge-off rates for loans issued in 2014-15
 
 | Group | Loans | Charged off | Charge-off rate |
@@ -181,6 +171,15 @@ Gap: **+0.46 percentage points**. On its own, this gap is modest and does not es
 | Pre-shock (2012–13) | 11.51% | 12.85% | **−1.34 pts** (oil-producing lower) |
 | Shock period (2014–15) | 14.87% | 14.41% | **+0.46 pts** (oil-producing higher) |
 | **Swing** | | | **+1.80 pts** |
+
+```mermaid
+flowchart TD
+    A["36-month term loans\nissued 2014-15\n445,743 rows"] --> B["Terminal status only\n445,596 loans\n(-147: unresolved)"]
+    B --> C["Oil-producing states\n50,972 loans - 14.87%"]
+    B --> D["Other states\n394,624 loans - 14.41%"]
+    C --> E["Gap: +0.46 pts\n(reversed from -1.34 pts pre-shock)"]
+    D --> E
+```
 
 Both groups' rates rose over time, but oil-producing states rose faster (**+3.36 pts** vs. **+1.56 pts** for other states). The gap turns positive starting around **Q3 2014**, roughly when oil prices began their decline — a timing alignment that adds some weight to a possible connection, though it does not rule out other factors moving at the same time.
 
