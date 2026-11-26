@@ -28,12 +28,14 @@ Seven U.S. states have economies closely tied to oil and gas: **Texas, North Dak
 
 This project compares loan charge-off rates between selected oil-producing and other states across two windows — **before** the price decline (2012–2013) and **during the decline** (2014–2015) — to see whether a measurable shift appears, and explores a few possible explanations for it.
 
+```mermaid
 flowchart TD
-    A["Raw data\n2,260,701 rows"] --> B["Issued 2014–15\n656,724 rows\n(−1,603,977: other years + 33 blanks)"]
-    B --> C["36-month term only\n445,743 rows\n(−210,981: 60-month loans)"]
-    C --> D["Terminal status only\n445,596 loans\n(−147: unresolved)"]
-    D --> E["Oil-producing states\n50,972 loans — 14.87%"]
-    D --> F["Other states\n394,624 loans — 14.41%"]
+    A["Raw data\n2,260,701 rows"] --> B["Issued 2014-15\n656,724 rows\n(-1,603,977: other years + 33 blanks)"]
+    B --> C["36-month term only\n445,743 rows\n(-210,981: 60-month loans)"]
+    C --> D["Terminal status only\n445,596 loans\n(-147: unresolved)"]
+    D --> E["Oil-producing states\n50,972 loans - 14.87%"]
+    D --> F["Other states\n394,624 loans - 14.41%"]
+```
 
 
 > **A note on how to read the findings below:** results are described as *associations* and *patterns consistent with* a possible effect, not as definitively proven causation. Several supporting checks (timing alignment, consistency across credit grades, elimination of competing explanations) make the story more credible, but this remains observational data rather than a controlled experiment.
