@@ -28,20 +28,6 @@ Seven U.S. states have economies closely tied to oil and gas: **Texas, North Dak
 
 This project compares loan charge-off rates between selected oil-producing and other states across two windows — **before** the price decline (2012–2013) and **during the decline** (2014–2015) — to see whether a measurable shift appears, and explores a few possible explanations for it.
 
-Good question — right now there's a mismatch: the overview talks about method (comparing two windows) but gives no numbers, while the flowchart I suggested jumps straight to specific rates and a gap. One of them should move to match the other. Here's the tradeoff:
-
-**Option A — Flowchart matches the overview (process only, no numbers)**
-Keep the flowchart purely about *how the cohort was built and compared* — the funnel down to the final cohort, then split into the two groups, with no rates at all. Numbers stay for the Key Findings section further down. This is cleaner and avoids spoiling the result before the "reasoning" is established — reads like a methods diagram, not a results teaser.
-
-**Option B — Overview expands to match the flowchart (state the headline numbers)**
-Add one sentence to the overview giving the topline result, then the flowchart naturally shows those numbers too.
-
-**My recommendation: Option A.** Reasons:
-- An overview's job is to frame the *question*, not answer it — stating the result in paragraph 2 undercuts the "let's investigate" framing you've built, and most good analysis READMEs hold the finding for a "Key Findings" section with the payoff.
-- You already have a dedicated Key Findings section with the full pre/post-shock table — that's the right place for numbers, not the overview.
-- A process-only flowchart right after the overview is also more reusable — it describes the cohort construction once, cleanly, and the charge-off numbers (which repeat in several places: overall, by state, by grade) don't need to live in the one diagram.
-
-So: strip the rates out of the flowchart, keep it to structure only:
 
 ```mermaid
 flowchart TD
