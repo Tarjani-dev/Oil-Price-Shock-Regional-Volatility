@@ -47,7 +47,7 @@ flowchart
 Oil-Price-Shock-Regional-Volatility/
 │
 ├── README.md
-├── LICENSE
+├── .gitattributes
 ├── .gitignore
 │
 ├── data/
