@@ -31,11 +31,16 @@ This project compares loan charge-off rates between selected oil-producing and o
 
 ```mermaid
 flowchart TD
-    A["Raw data\n2,260,701 rows"] --> B["Issued 2014-15\n656,724 rows\n(-1,603,977: other years + 33 blanks)"]
-    B --> C["36-month term only\n445,743 rows\n(-210,981: 60-month loans)"]
-    C --> D["Terminal status only\n445,596 loans\n(-147: unresolved)"]
-    D --> E["Oil-producing states\n50,972 loans"]
-    D --> F["Other states\n394,624 loans"]
+    A["Loan borrowers"] --> B["Oil-producing states\n(TX, ND, OK, NM, LA, WY, AK)"]
+    A --> C["Other states"]
+    B --> D["Before price decline\n2012-2013"]
+    B --> E["During decline\n2014-2015"]
+    C --> F["Before price decline\n2012-2013"]
+    C --> G["During decline\n2014-2015"]
+    D --> H["Compare charge-off rates"]
+    E --> H
+    F --> H
+    G --> H
 ```
 
 > **A note on how to read the findings below:** results are described as *associations* and *patterns consistent with* a possible effect, not as definitively proven causation. Several supporting checks (timing alignment, consistency across credit grades, elimination of competing explanations) make the story more credible, but this remains observational data rather than a controlled experiment.
@@ -97,10 +102,12 @@ Oil-Price-Shock-Regional-Volatility/
 Only loans that had **finished** their term were usable, since a loan still in progress has no final outcome yet.
 
 ```mermaid
-flowchart LR
-    A["Raw data\n2,260,701 rows"] --> B["Issued 2014-15\n656,724 rows"]
-    B --> C["36-month term only\n445,743 rows"]
-    C --> D["Resolved status only\n445,596 rows"]
+flowchart TD
+    A["Raw data\n2,260,701 rows"] --> B["Issued 2014-15\n656,724 rows\n(-1,603,977: other years + 33 blanks)"]
+    B --> C["36-month term only\n445,743 rows\n(-210,981: 60-month loans)"]
+    C --> D["Terminal status only\n445,596 loans\n(-147: unresolved)"]
+    D --> E["Oil-producing states\n50,972 loans"]
+    D --> F["Other states\n394,624 loans"]
 ```
 
 **Filtering rules:**
